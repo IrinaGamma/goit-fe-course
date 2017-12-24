@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    padding-top: 239px;
+    padding-bottom: 541px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+.wrapper {
+    width: 480px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 55px 36px;
+}
+
+.titles {
+    text-transform: uppercase;
+    font-family: 'PathwayGothicOne', sans-serif;
+    color: #263555;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.intro {
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #263555;
+}
+.second-article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.third-article{
+    border-top: solid; 
+    border-top-width: 2px; 
+    border-top-color: #dedbdb;
+    padding-top: 50px;
+}
+p{
+    color: #4e5050;
+    margin-bottom: 23px;
+}
+
+h3{
+    color: #263555;
+    margin-bottom: 15px;
+}
+.list {
+    column-count: 2;
+    color: #263555;
+    font-weight: bold;
+    list-style-type: none;
+    padding-left:30px;
+}
+
+li{
+margin-bottom: 18px;
+}
