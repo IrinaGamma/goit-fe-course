@@ -1,0 +1,184 @@
+
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 1022px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 117px 58px;
+    margin-top: 240px;
+    margin-bottom: 270px;
+    line-height: 20px;
+}
+
+.top-block{
+    border-bottom: solid; 
+    border-bottom-width: 2px; 
+    border-bottom-color: #dedbdb;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.first-article {
+    display: inline-block;
+    width: 610px;
+    margin-right: 40px;   
+}
+
+.second-article {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+}
+
+.titles {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    margin-bottom: 63px;
+    font-size: 32px;
+}
+
+.image {
+    width: 350px;
+    height: 280px;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.intro {
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #263555;
+    font-size: 16px;
+} 
+   
+.third-article {
+    display: inline-block;
+    width: 600px;
+    margin-right: 50px;
+}
+
+p {
+    color: #4e5050;
+}
+
+.list-second-article {
+    counter-reset: list-second-article;
+}
+
+.list-second-article li h3 {
+    margin-bottom: 18px;
+    font-weight: bold;
+    color: #263555;
+    font-size: 16px;
+}
+
+.list-second-article li {
+    margin-bottom: 30px;
+}
+
+.list-second-article li::before {
+    display: inline-block;
+    counter-increment: list-second-article;
+    content: counter(list-second-article);
+    border-radius: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: #4a99bd;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.list1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.list2 {
+    column-count: 2;
+    font-weight: bold;
+    padding-top: 23px;
+}
+
+.third-article li {
+    margin-bottom: 18px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #263555;
+    font-size: 16px;
+}
+
+.fourth-article {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+}
+
+.list2 li::before {
+    display: inline-block;
+    content: url(../img/arrow.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+.name {
+    font-weight: bold;
+    color: #263555;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.cite {
+    border: solid #dedbdb 2px;
+    padding: 20px;
+    margin-bottom: 32px;       
+}
+
+.quotation {
+    font-weight: bold;
+    color: #263555;
+    font-size: 16px;
+}
+
+.quotation::before {
+    content: '“';
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.quotation::after {
+    content: '”';
+    margin-left: 5px;
+}
+
+.testimonial {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #263555;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
