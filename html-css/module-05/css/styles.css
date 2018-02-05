@@ -10,12 +10,15 @@ body {
 ul {
     list-style: none;
   }
-  
-  header {
-    width: 50%;
+
+   
+  nav {
+    position: relative;
+    width: 1024px;
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-left: 100px;
   }
 
   .menu {
@@ -24,7 +27,7 @@ ul {
   .menu-item {
     display: inline-block;
     position: relative;
-    margin-right: 62px;
+    margin-right: 64px;
     padding-bottom: 10px;
   }
   
@@ -36,13 +39,14 @@ ul {
     font-size: 24px;
   }
 
-  .menu-link-space {
+  .menu-item-space {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Pathway Gothic One';
     color: #ffffff;
     font-size: 24px;
-    margin-right: 230px;
+    margin-right: 250px;
   }
 
   .submenu {
@@ -93,7 +97,6 @@ ul {
     margin: auto;
     background-color: #ffffff;
     padding: 56px;
-    margin-top: 50px;
     margin-bottom: 71px;
 }  
 
@@ -112,7 +115,7 @@ ul {
     line-height: 140px;
     position: absolute;
     top: 4%;
-    right: 46%;
+    right: 45%;
   }
 
   .logo:hover {
@@ -148,7 +151,7 @@ ul {
 
   .controls {
     position: absolute;
-    top: 80%;
+    top: 78%;
     left: 4%;
   }
   .prev::before {
@@ -198,7 +201,7 @@ ul {
     position: absolute;
     text-transform: uppercase;
     background-color: #38afe5;
-    top: 36.5%;
+    top: 39%;
     padding: 21px;
     color: #ffffff;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -210,14 +213,14 @@ ul {
     font-family: 'Pathway Gothic One', sans-serif;
     color: #263555;
     margin-bottom: 56px;
-    margin-top: 56px;
     font-size: 31px;
   }
 
   .destination-photo {
     display: inline-block;
     position: relative;
-    margin-right: 20px
+    margin-right: 14px;
+    width: 32%;
   }
 
   .destination-photo:hover .destination-short {
@@ -231,10 +234,10 @@ ul {
     background-color: #193149;
     color: #ffffff;
     width: 50%;
-    height: 92.5%;
-    padding: 10px 8px;
+    height: 100%;
+    padding: 0 8px;
     display: none;
-    
+    box-sizing: content-box;
   }
 
 .destination-photo:last-child {
@@ -242,7 +245,8 @@ ul {
 }
 
 img {
-  width: 324px;
+  display: block;
+  width: 100%;
 }
 
 h2 {
@@ -250,19 +254,22 @@ h2 {
   font-size: 31px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-
+ section {
+  margin-top: 56px;
+}
 p {
   font-family: Arial, sans-serif;
   font-size: 11px;
   line-height: 16px;
   text-align: justify;
-  margin-bottom: 23px;
+
 }
 
 .details-button {
   position: absolute;
   right: 5%;
+  bottom: 8%;
 }
