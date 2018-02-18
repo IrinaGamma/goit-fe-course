@@ -1,0 +1,233 @@
+@import url('./fonts.css');
+
+body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 940px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5625rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    color: #fed136;
+    text-decoration: none;
+    font-family: 'Kaushan', sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    margin-right: 2.5625rem;
+}
+
+.menu a:hover {
+    color: #fed136;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;   
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.services {
+    margin-top: 7.75rem;
+    margin-bottom: 7.1875rem;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5625rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;   
+}
+
+.short-description {
+    text-align: center;
+    color: #989898;
+    margin-top: 1.3125rem;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.services-description {
+    display: flex;
+    margin-top: 4.625rem;
+    justify-content: space-between;
+}
+
+.e-commerce {
+    display: flex;
+    flex-direction:	column;
+    align-items: center; 
+}
+
+.e-commerce:before {
+    content: '';
+    border: 0.125rem solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 4.1875rem; 
+    height: 4.1875rem;
+    display: inline-block;
+    background-image: url(../img/e-commerce.png);
+    background-repeat: no-repeat; 
+    background-position-x: 50%;
+    background-position-y: 50%;
+    margin-bottom: 27px;
+}
+
+.responsive {
+    display: flex;
+    flex-direction:	column;
+    align-items: center; 
+}
+
+.responsive:before {
+    content: '';
+    border: 0.125rem solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 4.1875rem; 
+    height: 4.1875rem;
+    display: inline-block;
+    background-image: url(../img/laptop.png);
+    background-repeat: no-repeat; 
+    background-position-x: 50%;
+    background-position-y: 50%;
+    margin-bottom: 27px;
+}
+
+.security {
+    display: flex;
+    flex-direction:	column;
+    align-items: center; 
+}
+
+.security:before {
+    content: '';
+    border: 0.125rem solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 4.1875rem; 
+    height: 4.1875rem;
+    display: inline-block;
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat; 
+    background-position-x: 50%;
+    background-position-y: 50%;
+    margin-bottom: 27px;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1.1875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 0.875rem;
+    color: #989898;
+    line-height: 18px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+article {
+    flex: 0 0 30%;
+    
+}
+.contacts {
+    background-color: #222222;
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat; 
+    background-position-x: 100%;
+    background-position-y: 88%;
+}
+
+form {
+    margin-top: 4.9375rem;
+}
+.contact-us {
+    color: #ffffff;
+}
+
+.fields {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.9375rem;
+}
+
+.form-column1 {
+    display: flex;
+    flex-direction:	column;
+    flex: 0 0 50%;
+    padding-right: 1.125rem;
+} 
+
+textarea {
+    flex: 0 0 50%;
+}
+
+input {
+    margin-bottom: 1.5625rem;
+    padding: 0.9375rem 0.9375rem;
+    text-transform: uppercase;
+    border-radius: 2%;
+    color: #989898;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.subject {
+    margin-bottom: 0;
+}
+
+textarea {
+    padding: 0.9375rem 0.9375rem;
+    text-transform: uppercase;
+    border-radius: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #fed136;
+    color: #ffffff;
+    margin: auto;
+    width: 12.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #989898;
+    cursor: pointer;
+  }
