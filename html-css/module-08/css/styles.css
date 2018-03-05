@@ -4,6 +4,13 @@ body {
     box-sizing: border-box;
 } 
 
+.container {
+    min-width: 20rem;
+    max-width: 58.75rem;
+    margin: auto;
+    text-align: center;
+}
+
 .top-section {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
@@ -15,7 +22,7 @@ body {
 
 header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -70,7 +77,7 @@ a {
     padding: 0.6875rem;
 }
 
-h1 {
+h2 {
     color: #ffffff;
     font-size: 1.875rem;
     font-family: 'Montserrat', sans-serif;
@@ -86,17 +93,19 @@ h1 {
     margin-bottom: 1.25rem;
 }
 
-.find-button {
+.find {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     background-color: #ff4e50;
     border: none;
-    padding: 0.875rem 3.25rem;
+    padding: 0.875rem 1.25rem;
     border-radius: 1.55rem;
+    margin: auto;
+    width: 14.0625rem;
 }
-.find-button:hover {
+.find:hover {
     border: 0.0625rem solid #ffffff;
 }
 
@@ -105,19 +114,24 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.375rem;
+    margin-top: 4.0625rem;
+    padding-right: 2.125rem;
+    padding-left: 2.125rem;
 }
 
 li {
     margin-top: 1.75rem;
     position: relative;
+    padding-right: 2.93rem;
+    padding-left: 2.93rem;
 }
 
 
-h3 {
+h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 0.875rem;
@@ -220,6 +234,7 @@ button {
 }
 
 @media (min-width: 768px) {
+
 .authorisation {
     order: 2;
     margin-bottom: 0; 
@@ -230,6 +245,7 @@ header {
     justify-content: space-between;
     padding-left: 2.5rem;
     margin-bottom: 7.5625rem;
+    flex-direction: row;
     }
 
 .logo {
@@ -239,12 +255,28 @@ header {
 .travellers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 33.25rem;
+    margin: auto;
 }
-    li {
+
+h3 {
+    margin-bottom: 1.5rem;
+}
+
+li {
     flex: 0 0 50%;
-    padding-right: 1.875rem;
+    padding-right: 0;
+    padding-left: 0;
     }
+
+.intro {
+    width: 45%;
+    margin: auto;
+}
+.top-section {
+    padding-bottom: 14.625rem;
+    }
+
 .bottom-section {
     padding-left: 9.75rem;
     padding-right: 9.75rem;
@@ -255,13 +287,14 @@ header {
 }
 
 .travellers li:nth-child(2n+2) {
-    padding-right: 0;
+    margin-right: 0;
 }
 .Lucas:before {
     position: absolute;
     top: 38%;
     left: 58%;
 }
+
 .Bradley:before {
     position: absolute;
     top: 38%;
@@ -269,9 +302,15 @@ header {
 }
 
 .Heather:before {
-        position: absolute;
-        top: 41%;
-        left: 65%;
+    position: absolute;
+    top: 41%;
+    left: 65%;
+}
+
+.travellers li:nth-child(-n+2) {
+    margin-top: 0;
+}
+
 }
 
 @media (min-width: 940px) {
@@ -289,8 +328,7 @@ header {
 .travellers {
     display: flex;
     justify-content: space-around;
-    width: 58.75rem;
-    margin: auto;
+
     }
 
 li {
@@ -298,11 +336,7 @@ li {
     padding: 0;
    }
 
-.top-section {
-    padding-bottom: 14.625rem;
-}
-
-h1 {
+h2 {
     font-size: 3.25rem;
 }
 .subhead {
@@ -327,5 +361,13 @@ h1 {
         top: 41%;
         left: 60%;
 }
+.intro {
+    width: 35%;
+    margin: auto;
+}
 
+.travellers li {
+    margin-top: 0;
+    margin-right: 1rem;
+}
 }
