@@ -326,9 +326,10 @@ header {
         }
 
 .travellers {
+    width: 58.75rem;
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: nowrap;
     }
 
 li {
@@ -362,12 +363,28 @@ h2 {
         left: 60%;
 }
 .intro {
-    width: 35%;
+    width: 55%;
     margin: auto;
 }
 
 .travellers li {
     margin-top: 0;
-    margin-right: 1rem;
 }
+}
+
+@media (min-width: 1097px){
+    .intro {
+    width: 45%;
+}
+
+@media (min-width: 1350px){
+    .intro {
+    width: 40%;
+}
+
+@media (min-width: 1515px){
+    .intro {
+    width: 35%;
+}
+
 }
